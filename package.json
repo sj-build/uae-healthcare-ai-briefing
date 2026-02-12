@@ -1,0 +1,9 @@
+{
+  "name": "uae-healthcare-ai",
+  "version": "1.0.0",
+  "description": "KARA Fund UAE Healthcare & AI Infrastructure Investment Briefing",
+  "scripts": {
+    "dev": "npx serve public",
+    "deploy": "vercel --prod"
+  }
+}

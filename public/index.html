@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>KARA Fund — UAE 투자 브리핑 2026.02.13</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=DM+Serif+Display&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0c;--s1:#111116;--s2:#18181f;--s3:#1f1f28;--bd:#2a2a35;--bd2:#35354a;--tx:#e8e8ed;--tx2:#8888a0;--tx3:#555568;--c1:#00d4aa;--c1d:#00d4aa22;--c2:#6366f1;--c2d:#6366f122;--c3:#f59e0b;--c3d:#f59e0b22;--red:#ef4444;--r:12px;--rs:8px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--tx);line-height:1.7;-webkit-font-smoothing:antialiased}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--bd);border-radius:3px}
+.hd{position:sticky;top:0;z-index:100;background:rgba(10,10,12,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd);padding:0 32px}
+.hd-in{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'DM Serif Display',serif;font-size:18px}.logo span{color:var(--tx3);font-family:'Noto Sans KR';font-size:13px;margin-left:12px}
+.dt{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--tx2);background:var(--s2);padding:4px 12px;border-radius:20px;border:1px solid var(--bd)}
+.hero{max-width:1200px;margin:0 auto;padding:48px 32px 32px}
+.hero h1{font-family:'DM Serif Display',serif;font-size:clamp(26px,3.5vw,40px);line-height:1.2;margin-bottom:12px}
+.hero h1 em{font-style:normal;color:var(--c1)}
+.hero p{font-size:14px;color:var(--tx2);max-width:720px;line-height:1.8}
+.tw{position:sticky;top:64px;z-index:90;background:rgba(10,10,12,.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd)}
+.tabs{max-width:1200px;margin:0 auto;padding:0 32px;display:flex}
+.tab{padding:14px 20px;cursor:pointer;font-size:14px;font-weight:500;color:var(--tx3);border-bottom:2px solid transparent;transition:all .25s;user-select:none;white-space:nowrap}
+.tab:hover{color:var(--tx2)}
+.tab.active[data-tab="hc"]{color:var(--c1);border-color:var(--c1)}
+.tab.active[data-tab="ai"]{color:var(--c2);border-color:var(--c2)}
+
+.cnt{max-width:1200px;margin:0 auto;padding:28px 32px 60px}
+.pn{display:none;animation:fu .3s}.pn.active{display:block}
+@keyframes fu{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.sec{margin-bottom:28px;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;background:var(--s1)}
+.sh{padding:18px 22px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;transition:background .2s;user-select:none}
+.sh:hover{background:var(--s2)}
+.st{font-size:15px;font-weight:600;display:flex;align-items:center;gap:10px}
+.st .n{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:500;padding:2px 8px;border-radius:4px}
+[data-panel="hc"] .n{background:var(--c1d);color:var(--c1)}
+[data-panel="ai"] .n{background:var(--c2d);color:var(--c2)}
+
+.chv{width:18px;height:18px;transition:transform .25s;color:var(--tx3)}
+.sec.open .chv{transform:rotate(180deg)}
+.sb{max-height:0;overflow:hidden;transition:max-height .4s}.sec.open .sb{max-height:20000px}
+.sc{padding:0 22px 22px;border-top:1px solid var(--bd);padding-top:18px}
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;margin:14px 0}
+.sk{background:var(--s2);border:1px solid var(--bd);border-radius:var(--rs);padding:14px}
+.sk .l{font-size:11px;font-weight:500;color:var(--tx3);text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px}
+.sk .v{font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:500}
+.sk .u{font-size:11px;color:var(--tx2);margin-top:3px}
+.a1 .v{color:var(--c1)}.a2 .v{color:var(--c2)}.a3 .v{color:var(--c3)}
+.dt-t{width:100%;border-collapse:collapse;margin:14px 0;font-size:13px}
+.dt-t th{text-align:left;padding:10px 12px;background:var(--s2);font-weight:600;font-size:11px;color:var(--tx2);text-transform:uppercase;letter-spacing:.3px;border-bottom:1px solid var(--bd)}
+.dt-t td{padding:10px 12px;border-bottom:1px solid var(--bd);vertical-align:top}.dt-t tr:last-child td{border-bottom:none}.dt-t tr:hover td{background:var(--s2)}.dt-t .tot td{font-weight:700;background:var(--s3)}
+.ct{width:100%;border-collapse:collapse;margin:14px 0;font-size:13px}
+.ct th{text-align:left;padding:10px 14px;font-weight:600;font-size:11px;text-transform:uppercase;border-bottom:2px solid var(--bd)}
+.ct td{padding:10px 14px;border-bottom:1px solid var(--bd)}.ct tr:hover td{background:var(--s2)}
+.ct .w{color:var(--c1);font-weight:600}.ct .lo{color:var(--tx3)}.ct .best{background:var(--c1d);color:var(--c1);font-weight:700}
+.ib{background:var(--s2);border-left:3px solid var(--c1);border-radius:0 var(--rs) var(--rs) 0;padding:14px 18px;margin:14px 0;font-size:13px}
+.ib strong{color:var(--tx)}.ib.i2{border-left-color:var(--c2)}.ib.i3{border-left-color:var(--c3)}.ib.id{border-left-color:var(--red)}.ib.iq{border-left-color:#f59e0b;background:linear-gradient(90deg,#f59e0b08,transparent);font-style:italic}
+.tg{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;margin:2px 3px 2px 0}
+.tg.g{background:#00d4aa18;color:#00d4aa}.tg.b{background:#6366f118;color:#818cf8}.tg.y{background:#f59e0b18;color:#f59e0b}.tg.r{background:#ef444418;color:#f87171}
+h3.ss{font-size:14px;font-weight:600;margin:20px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--bd)}h3.ss:first-child{margin-top:0}
+p.d{font-size:13px;color:var(--tx2);line-height:1.8;margin:6px 0}p.d strong{color:var(--tx)}
+ul.bl{list-style:none;padding:0;margin:6px 0}ul.bl li{font-size:13px;color:var(--tx2);padding:3px 0 3px 16px;position:relative;line-height:1.7}
+ul.bl li::before{content:'';position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--bd2)}ul.bl li strong{color:var(--tx)}
+.pc{background:var(--s2);border:1px solid var(--bd);border-radius:var(--rs);padding:16px;margin:10px 0}
+.pc .ph{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.pc .pa{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.pc .pa.g1{background:var(--c1d)}.pc .pa.g2{background:var(--c2d)}.pc .pa.g3{background:var(--c3d)}
+.pc .pn2{font-weight:700;font-size:14px}.pc .pr{font-size:11px;color:var(--tx2)}
+.pc .pd{font-size:12px;color:var(--tx2);line-height:1.7}.pc .pd strong{color:var(--tx)}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+.cc{background:var(--s2);border:1px solid var(--bd);border-radius:var(--rs);padding:16px}
+.cc h4{font-size:13px;font-weight:700;margin-bottom:10px}
+.pg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+.pkd{background:var(--s2);border:1px solid var(--bd);border-radius:var(--rs);padding:16px;border-top:3px solid var(--red)}
+.pkd h4{font-size:13px;font-weight:700;margin-bottom:8px;color:#f87171}
+.pkg{background:var(--s2);border:1px solid var(--bd);border-radius:var(--rs);padding:16px;border-top:3px solid var(--c1)}
+.pkg h4{font-size:13px;font-weight:700;margin-bottom:8px;color:var(--c1)}
+.pkb{background:var(--s2);border:1px solid var(--bd);border-radius:var(--rs);padding:16px;border-top:3px solid var(--c2)}
+.pkb h4{font-size:13px;font-weight:700;margin-bottom:8px;color:var(--c2)}
+.tldr{border-radius:var(--r);padding:20px;margin-bottom:24px}
+.tldr.t1{background:linear-gradient(135deg,var(--c1d),#00d4aa08);border:1px solid #00d4aa33}
+.tldr.t2{background:linear-gradient(135deg,var(--c2d),#6366f108);border:1px solid #6366f133}
+.tldr .tll{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;letter-spacing:1px;margin-bottom:6px}
+.tldr.t1 .tll{color:var(--c1)}.tldr.t2 .tll{color:var(--c2)}
+.tldr .tlt{font-size:14px;color:var(--tx);line-height:1.8}
+.tldr .tlt strong{color:var(--c2)}.tldr.t1 .tlt strong{color:var(--c1)}
+.mb{height:26px;border-radius:4px;display:flex;align-items:center;padding:0 10px;font-size:11px;font-weight:600;margin:3px 0;color:#fff}
+.qc{background:var(--s2);border:1px solid var(--bd);border-radius:var(--rs);padding:12px 16px;margin:6px 0;font-size:13px;display:flex;align-items:flex-start;gap:10px}
+.qc .qn{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:600;color:var(--c3);background:var(--c3d);padding:2px 6px;border-radius:4px;flex-shrink:0;margin-top:2px}
+.qc .qt{color:var(--tx2)}.qc .qt strong{color:var(--tx)}
+.tl{margin:14px 0;padding-left:18px;border-left:2px solid var(--bd)}.ti{padding:0 0 16px 18px;position:relative}
+.ti::before{content:'';position:absolute;left:-7px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--s1);border:2px solid var(--c1)}
+[data-panel="ai"] .ti::before{border-color:var(--c2)}
+.ti .tp{font-weight:700;font-size:12px;color:var(--c1);margin-bottom:3px}
+[data-panel="ai"] .ti .tp{color:var(--c2)}
+.ti .td{font-size:12px;color:var(--tx2);line-height:1.7}
+@media(max-width:768px){.hero,.cnt{padding-left:16px;padding-right:16px}.tabs{padding:0 12px;overflow-x:auto}.tab{padding:12px 12px;font-size:13px}.sg{grid-template-columns:1fr 1fr}.cg,.pg{grid-template-columns:1fr}.sc{padding:0 14px 14px;padding-top:14px}}
+</style>
+</head>
+<body>
+<div class="hd"><div class="hd-in"><div class="logo">KARA Fund<span>Investment Briefing</span></div><div class="dt">2026.02.13 THU</div></div></div>
+<div class="hero"><h1>UAE 헬스케어 &amp; AI 인프라<br><em>투자 미팅 브리핑</em></h1><p>두바이 메디컬 투어리즘과 아부다비 소버린 AI — 두 메가트렌드가 한국 AI 피부과 클리닉과 AI 반도체 모두에게 중동 최적의 진입 거점을 만들고 있다.</p></div>
+<div class="tw"><div class="tabs">
+<div class="tab active" data-tab="hc"><span>🏥</span> UAE 헬스케어</div>
+<div class="tab" data-tab="ai"><span>⚡</span> AI 인프라</div>
+
+</div></div>
+<div class="cnt">
+
+<!-- ══════════════════ TAB 1: HEALTHCARE ══════════════════ -->
+<div class="pn active" data-panel="hc">
+<div class="tldr t1"><div class="tll">💡 TL;DR</div><div class="tlt">한국 AI 피부과 = UAE <strong>AI+헬스케어 메가트렌드</strong> 완벽 매치. M42(G42 헬스케어) 생태계 + 미용의료 연 15% 성장. 미국 대비 <strong>1/10 규제, 3배 마진</strong>. UAE 성공 → GCC+아프리카+인도 <strong>$900B+ 시장 자동 연결</strong>. 지금이 <strong>골드러시 타이밍</strong>.</div></div>
+<div class="sg">
+<div class="sk a1"><div class="l">UAE 헬스케어</div><div class="v">$22B</div><div class="u">→ $50B (2029E, CAGR 18%)</div></div>
+<div class="sk a1"><div class="l">두바이 한국 피부과</div><div class="v">0개</div><div class="u">시내 전문 클리닉 부재</div></div>
+<div class="sk a1"><div class="l">DHA 승인</div><div class="v">6–18mo</div><div class="u">FDA 5–7년 vs 초고속</div></div>
+<div class="sk a1"><div class="l">UAE 마진율</div><div class="v">50–70%</div><div class="u">미국 15–25% 대비 3배</div></div>
+</div>
+
+<!-- HC-01 -->
+<div class="sec open"><div class="sh" onclick="tog(this)"><div class="st"><span class="n">01</span>🎯 왜 지금 UAE인가 — "완벽한 스톰"</div><svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="sb"><div class="sc">
+<h3 class="ss">1. AI+헬스케어 국가 어젠다</h3>
+<p class="d">National AI Strategy 2031: 헬스케어 = <strong>"4대 우선 분야"</strong>. AI 경제 기여 25% 국가 목표.</p>
+<h3 class="ss">2. 폭발적 시장 성장</h3>
+<div class="sg" style="grid-template-columns:1fr 1fr"><div class="sk a1"><div class="l">2024</div><div class="v">$22B</div></div><div class="sk a1"><div class="l">2029E</div><div class="v">$50B</div><div class="u">CAGR 18%, AI+미용 15–20%</div></div></div>
+<h3 class="ss">3. 완벽한 타겟 고객</h3>
+<ul class="bl"><li><strong>HNWI 급증:</strong> 연 9,800명 백만장자 이주 → 프리미엄 의료 폭발</li><li><strong>K-Beauty:</strong> 한국 피부과 = "최고 기술" 인식</li><li><strong>의료관광:</strong> 인도/아프리카/CIS에서 연 <strong>500만+</strong> 관광객</li></ul>
+<h3 class="ss">4. 진입 장벽 혁명적 차이</h3>
+<div class="cg">
+<div class="pkd" style="border-top-color:var(--tx3)"><h4 style="color:var(--tx3)">🇺🇸 미국 시나리오</h4><ul class="bl"><li>FDA: <strong>3–7년 + $10–50M</strong></li><li>Big 5 보험 85% 독점</li><li>USMLE + 레지던시 재수련</li><li>AI 오진 배상 $2–5M</li></ul></div>
+<div class="pkg"><h4>🇦🇪 UAE 시나리오</h4><ul class="bl"><li>DHA: <strong>6–18mo + $100K–500K</strong></li><li>Hub71 → 병원 네트워크 직접</li><li>한국 면허 + 6개월 현지</li><li>프리존 법인세 <strong>0%</strong></li></ul></div>
+</div>
+<h3 class="ss">5. 타이밍 정렬</h3>
+<ul class="bl"><li><strong>Health 2030:</strong> $50B 투자 확정</li><li><strong>AI 예산:</strong> 헬스케어 25% 배정</li><li><strong>경쟁자 부재:</strong> 미/유 대형 병원 본격 진출 전 → 선점 기회</li></ul>
+<h3 class="ss">6. 글로벌 허브 효과 — $900B+</h3>
+<table class="dt-t"><thead><tr><th>시장</th><th>규모</th><th>경로</th></tr></thead><tbody>
+<tr><td><strong>GCC 5개국</strong></td><td>$180B</td><td>DHA → SFDA/MOPH <strong>자동 승인</strong></td></tr>
+<tr><td><strong>아프리카</strong></td><td>$200B</td><td>Dubai-아프리카 의료관광 MOU</td></tr>
+<tr><td><strong>인도</strong></td><td>$400B</td><td>UAE 거주 인도인 400만+</td></tr>
+<tr><td><strong>CIS</strong></td><td>$120B</td><td>러시아계 부유층 의료관광</td></tr>
+</tbody></table>
+</div></div></div>
+
+<!-- HC-02 -->
+<div class="sec open"><div class="sh" onclick="tog(this)"><div class="st"><span class="n">02</span>🌍 글로벌 시장 비교 — UAE 압도적 우위</div><svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="sb"><div class="sc">
+<table class="ct"><thead><tr><th>시장</th><th>장벽</th><th>수익성</th><th>성장</th><th>K-브랜드</th><th>지원</th></tr></thead><tbody>
+<tr><td>🇺🇸 미국</td><td class="lo">10/10</td><td>15–25%</td><td class="lo">2–3%</td><td class="lo">약함</td><td class="lo">없음</td></tr>
+<tr><td>🇯🇵 일본</td><td class="lo">8/10</td><td>10–15%</td><td class="lo">1–2%</td><td>중간</td><td class="lo">없음</td></tr>
+<tr><td>🇨🇳 중국</td><td class="lo">7/10</td><td class="lo">5–8%</td><td>5–6%</td><td class="lo">약함</td><td class="lo">없음</td></tr>
+<tr><td>🇸🇬 싱가포르</td><td>6/10</td><td>높음</td><td>4–5%</td><td class="w">강함</td><td>보통</td></tr>
+<tr style="background:var(--c1d)"><td><strong>🇦🇪 UAE</strong></td><td class="best">3/10</td><td class="best">50–70%</td><td class="best">18%</td><td class="best">극강</td><td class="best">극상</td></tr>
+</tbody></table>
+<h3 class="ss">규제 승인 비교</h3>
+<table class="dt-t"><thead><tr><th>항목</th><th>🇺🇸 FDA</th><th>🇪🇺 MDR</th><th style="color:var(--c1)">🇦🇪 DHA</th></tr></thead><tbody>
+<tr><td>기간</td><td>5–7년</td><td>3–5년</td><td style="color:var(--c1);font-weight:700">6–18개월</td></tr>
+<tr><td>비용</td><td>$10–50M</td><td>$5–25M</td><td style="color:var(--c1);font-weight:700">$100K–500K</td></tr>
+<tr><td>임상</td><td>필수 2–3년</td><td>필수 2–4년</td><td style="color:var(--c1);font-weight:700">해외 데이터 인정</td></tr>
+</tbody></table>
+<h3 class="ss">수익성 비교</h3>
+<div style="margin:12px 0">
+<div style="display:flex;align-items:center;gap:10px;margin:6px 0"><span style="width:55px;font-size:12px;color:var(--tx2)">중국</span><div class="mb" style="width:15%;background:var(--red)">8–15%</div></div>
+<div style="display:flex;align-items:center;gap:10px;margin:6px 0"><span style="width:55px;font-size:12px;color:var(--tx2)">유럽</span><div class="mb" style="width:20%;background:var(--c3)">12–20%</div></div>
+<div style="display:flex;align-items:center;gap:10px;margin:6px 0"><span style="width:55px;font-size:12px;color:var(--tx2)">미국</span><div class="mb" style="width:25%;background:#3b82f6">15–25%</div></div>
+<div style="display:flex;align-items:center;gap:10px;margin:6px 0"><span style="width:55px;font-size:12px;font-weight:700;color:var(--c1)">UAE</span><div class="mb" style="width:70%;background:var(--c1)">50–70%</div></div>
+</div>
+<div class="ib"><strong>UAE 수익성:</strong> 프리존 세금 0% + 1인당 의료비 $3,500+/년 (세계 최고) + Hub71 임대 50%↓ + 시술 마진 미국 2–3배</div>
+<div class="ib i3"><strong>실제 사례:</strong> 한국 AI 의료 스타트업 — 미국 <strong>7년째 FDA 대기</strong> vs UAE <strong>18개월 만에 M42 파일럿 계약</strong>. IBM Watson Oncology $62M 투자 후 2022 철수.</div>
+<h3 class="ss">경쟁국 한계</h3>
+<div class="sg" style="grid-template-columns:repeat(2,1fr)">
+<div class="pkd" style="border-top-color:var(--tx3)"><h4 style="color:var(--tx3)">🇺🇸 미국</h4><ul class="bl"><li>FDA 510(k) <strong>성공률 30%↓</strong></li><li>보험 수가 추가 2–3년</li><li>AI 오진 보험 <strong>$200–500K/년</strong></li></ul></div>
+<div class="pkd" style="border-top-color:var(--tx3)"><h4 style="color:var(--tx3)">🇯🇵 일본</h4><ul class="bl"><li>PMDA <strong>평균 7–10년</strong></li><li>일본어 임상 데이터 필수</li><li>마진율 <strong>10–15%</strong> 제한</li></ul></div>
+<div class="pkd" style="border-top-color:var(--tx3)"><h4 style="color:var(--tx3)">🇨🇳 중국</h4><ul class="bl"><li>미중 갈등 → <strong>한국 연루</strong></li><li>데이터 현지화 의무</li><li>Tencent/Alibaba <strong>지배</strong></li></ul></div>
+<div class="pkd" style="border-top-color:var(--tx3)"><h4 style="color:var(--tx3)">🇪🇺 유럽</h4><ul class="bl"><li>MDR Class IIa-III <strong>3–5년</strong></li><li>27개국 수가 체계</li><li>GDPR AI 학습 제한</li></ul></div>
+</div>
+</div></div></div>
+
+<!-- HC-03 -->
+<div class="sec open"><div class="sh" onclick="tog(this)"><div class="st"><span class="n">03</span>🏥 UAE 헬스케어 생태계</div><svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="sb"><div class="sc">
+<h3 class="ss">Tier 1 — 정부 메가 플레이어</h3>
+<div class="pc"><div class="ph"><div class="pa g1">🧬</div><div><div class="pn2">M42 (G42 헬스케어)</div><div class="pr">Sheikh Tahnoun 직할 · AI 진단 선도</div></div></div><div class="pd"><strong>포지션:</strong> G42 산하 AI 헬스케어 플래그십. 글로벌 최고 AI 진단 기술 UAE 도입이 사명.<br><strong>기회:</strong> 한국 AI 피부 진단 솔루션 적극 탐색 → <strong>직접 파트너십 대상</strong></div></div>
+<div class="ib iq"><strong>M42 CEO:</strong> "우리는 글로벌 최고의 AI 진단 기술을 UAE에 도입하는 것이 사명이다."</div>
+<div class="pc"><div class="ph"><div class="pa g1">🏨</div><div><div class="pn2">Burjeel Holdings</div><div class="pr">시가총액 $3.8B · ADX 상장</div></div></div><div class="pd"><strong>규모:</strong> UAE 최대 사립 의료그룹. 의료관광+AI 진단 적극 도입.<br><strong>기회:</strong> 파일럿 → B2B 라이선싱</div></div>
+<div class="pc"><div class="ph"><div class="pa g1">🏛️</div><div><div class="pn2">SEHA (Abu Dhabi Health)</div><div class="pr">12개 병원 · Microsoft AI 협력</div></div></div><div class="pd"><strong>기회:</strong> 공공 부문 레퍼런스 → GCC 확장 기반</div></div>
+<h3 class="ss">Tier 2 — 프리미엄 클리닉</h3>
+<ul class="bl"><li><strong>Mediclinic ME:</strong> 프리미엄 의료, AI 진단 도입</li><li><strong>Aster DM:</strong> 83개 시설, 의료관광 핵심</li><li><strong>American Hospital Dubai:</strong> 미용+AI 수요</li></ul>
+<div class="ib i3"><strong>⚠️ 경쟁:</strong> Google Health+M42 파트너십 체결, Microsoft+SEHA 플랫폼 구축, 중국 AI G42 진출. <strong>선점 필수.</strong></div>
+</div></div></div>
+
+<!-- HC-04 -->
+<div class="sec"><div class="sh" onclick="tog(this)"><div class="st"><span class="n">04</span>DHCC 시장 · K-브랜드 파워</div><svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="sb"><div class="sc">
+<div class="sg"><div class="sk a1"><div class="l">활성 시설</div><div class="v">487</div><div class="u">YoY 30%↑</div></div><div class="sk a1"><div class="l">국제 환자</div><div class="v">691K</div><div class="u">AED 10.3억 지출</div></div><div class="sk a1"><div class="l">피부과 비중</div><div class="v">31%</div><div class="u">투어리즘 최대</div></div><div class="sk a1"><div class="l">1인당 의료비</div><div class="v">$3.5K+</div><div class="u">세계 최고 수준</div></div></div>
+<div class="ib"><strong>경쟁 공백:</strong> 두바이 한국 피부과 0개. 서울아산병원 DHCC Phase 2에 65병상 건설 (선례). K-Beauty "최고 기술" + AI = <strong>미개척 프리미엄 틈새</strong>.</div>
+<h3 class="ss">K-브랜드 파워</h3>
+<div class="sg" style="grid-template-columns:repeat(2,1fr)">
+<div class="sk" style="border-left:3px solid var(--c1)"><div class="l" style="color:var(--c1)">💄 K-Beauty</div><div class="u">한국 피부과 = "세계 최고" 인식. 미국/유럽에선 "아시아 의료" 수준.</div></div>
+<div class="sk" style="border-left:3px solid var(--c1)"><div class="l" style="color:var(--c1)">📱 기술 신뢰</div><div class="u">삼성/LG → "한국=첨단기술". AI 의료에 자연스러운 신뢰.</div></div>
+<div class="sk" style="border-left:3px solid var(--c1)"><div class="l" style="color:var(--c1)">🎵 K-Culture</div><div class="u">K-Pop/Drama MZ세대 열풍. 의료관광 "K-Medical Tourism" 시너지.</div></div>
+<div class="sk" style="border-left:3px solid var(--c1)"><div class="l" style="color:var(--c1)">🤝 정부 신뢰</div><div class="u">바라카 원전 성공+CEPA. 정부 차원 신뢰 관계.</div></div>
+</div>
+<div class="ib iq"><strong>MBZ (UAE 대통령):</strong> "2025–2030이 UAE 헬스케어 '도약의 5년'. 세계 최고 의료 기술 유치에 모든 자원 집중."</div>
+</div></div></div>
+
+<!-- HC-05 -->
+<div class="sec"><div class="sh" onclick="tog(this)"><div class="st"><span class="n">05</span>🚀 기회 vs ⚠️ 리스크</div><svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="sb"><div class="sc">
+<h3 class="ss">기회</h3>
+<div class="pg">
+<div class="pkg"><h4>🏛️ 정부 골든타임</h4><ul class="bl"><li>Hub71: <strong>$2M 시드 무상 + $10M A 연결</strong></li><li>DHA 승인 패스트트랙 + 임대 50%↓</li><li>MBR Innovation Fund: AI+헬스 <strong>$2B</strong></li><li>1:2 매칭 펀드 (10년 장기)</li></ul></div>
+<div class="pkg"><h4>🤝 M42 파트너십</h4><ul class="bl"><li>Tahnoun 직할 AI 헬스케어</li><li>한국 AI 피부 진단 솔루션 <strong>적극 탐색</strong></li><li>파일럿 → B2B → GCC 확장</li></ul></div>
+</div>
+<h3 class="ss">리스크</h3>
+<div class="pg">
+<div class="pkd"><h4>📋 규제</h4><ul class="bl"><li>DHA AI 의료기기 6–18mo</li><li>환자 데이터 이전 제한</li><li>한국 의사 면허 인정 절차</li></ul></div>
+<div class="pkd"><h4>💼 시장</h4><ul class="bl"><li>임대료 $200–500/sqft</li><li>AI+의료 인재 100% 외국인</li><li>Google/MS 이미 M42/SEHA</li></ul></div>
+</div>
+</div></div></div>
+
+<!-- HC-06 -->
+<div class="sec"><div class="sh" onclick="tog(this)"><div class="st"><span class="n">06</span>설립 비용 · C37 테스트 · 법인</div><svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="sb"><div class="sc">
+<table class="dt-t"><thead><tr><th>항목</th><th>최소</th><th>최대</th></tr></thead><tbody>
+<tr><td>라이선스+설립</td><td>$19K</td><td>$41K</td></tr>
+<tr><td>자본금</td><td>$82K</td><td>$82K</td></tr>
+<tr><td>임대+인테리어</td><td>$121K</td><td>$241K</td></tr>
+<tr><td>의료장비 3–5대</td><td>$204K</td><td>$490K</td></tr>
+<tr><td>직원+운전자금</td><td>$95K</td><td>$231K</td></tr>
+<tr class="tot"><td><strong>합계</strong></td><td><strong>~$52만</strong></td><td><strong>~$110만</strong></td></tr>
+</tbody></table>
+<div class="ib"><strong>장비 40–60% 절감:</strong> DHCC 관세 면제. <strong>골든비자:</strong> DHA 면허 + AED 30K+/월.</div>
+<h3 class="ss">C37 저위험 테스트</h3>
+<div class="sg"><div class="sk a1"><div class="l">입주 의사</div><div class="v">28</div></div><div class="sk a1"><div class="l">시술</div><div class="v">5,619</div></div><div class="sk a1"><div class="l">환자</div><div class="v">3,003</div></div><div class="sk a1"><div class="l">방문</div><div class="v">7,870</div></div></div>
+<p class="d">C37 방문 진료 → AI 수요 테스트 → 환자 DB → 풀 클리닉 전환. 대형 장비 반입·프리미엄 브랜딩 제약 있음.</p>
+<h3 class="ss">법인 구조</h3>
+<p class="d">권장: <strong>한국 모회사 → DHCC FZ-LLC (100%)</strong> / B2B: <strong>Hub71/ADGM → M42/Burjeel 라이선싱</strong></p>
+<div class="ib i3"><strong>CFC 주의:</strong> UAE 세율 &lt;16.8% → CFC 해당. 적극적 사업 면제 가능하나 소극적 소득 5%↓ 유지 필수.</div>
+</div></div></div>
+
+<!-- HC-07 -->
+<div class="sec"><div class="sh" onclick="tog(this)"><div class="st"><span class="n">07</span>📋 실행 로드맵</div><svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="sb"><div class="sc">
+<div class="tl">
+<div class="ti"><div class="tp">Phase 1 — 블리츠크리그 진입 (3–6mo)</div><div class="td">Hub71 입주 (2주 승인) + 정부 펀딩<br>DHA Class II 승인 신청 (한국 임상데이터)<br>M42/Burjeel 파일럿 협상<br>DHCC 부지 확보 or C37 테스트</div></div>
+<div class="ti"><div class="tp">Phase 2 — 시장 장악 (6–12mo)</div><div class="td">DHCC 클리닉 개원 (Dubai Mall·JBR·Abu Dhabi)<br>의료진 라이선스 + 트레이닝<br>K-Beauty + AI 진단 의료관광 마케팅<br>목표: UAE AI 피부 진단 점유율 <strong>30%</strong></div></div>
+<div class="ti"><div class="tp">Phase 3 — 확장 (12–24mo)</div><div class="td">병원 체인 B2B (Burjeel/Mediclinic)<br>GCC: 사우디/카타르 (DHA 레버리지)<br>Series A (현지 SWF 참여)<br>$900B+ 연결 시장 접근</div></div>
+</div>
+</div></div></div>
+</div>
+
+<!-- ══════════════════ TAB 2: AI INFRA ══════════════════ -->
+<div class="pn" data-panel="ai">
+<div class="tldr t2"><div class="tll">💡 TL;DR</div><div class="tlt">리벨리온 = UAE Stargate <strong>5GW AI 캠퍼스</strong>에서 "에너지 효율 + 주권 AI" 포지션. NVIDIA 대비 <strong>전력 50%↓</strong>, 납기 3배 빠름. G42/Core42(기술 검증) → MGX(투자) → Hub71(생태계) <strong>3단계 접근</strong>이 최적. 비NVIDIA <strong>4GW 용량</strong>이 직접 상업 기회.</div></div>
+<div class="sg">
+<div class="sk a2"><div class="l">Stargate UAE</div><div class="v">5 GW</div><div class="u">미국 외 최대 AI 캠퍼스</div></div>
+<div class="sk a2"><div class="l">비NVIDIA</div><div class="v">4 GW</div><div class="u">멀티벤더 기회</div></div>
+<div class="sk a2"><div class="l">UAE AI 투자</div><div class="v">$50B+</div><div class="u">MGX+G42+Stargate</div></div>
+<div class="sk a2"><div class="l">전력 효율</div><div class="v">50%↓</div><div class="u">NPU vs GPU</div></div>
+</div>
+
+<!-- AI-01 -->
+<div class="sec open"><div class="sh" onclick="tog(this)"><div class="st"><span class="n">01</span>UAE AI 생태계 · 투자 규모</div><svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="sb"><div class="sc">
+<table class="dt-t"><thead><tr><th>프로젝트</th><th>규모</th><th>상세</th></tr></thead><tbody>
+<tr><td><strong>Stargate UAE</strong></td><td>5GW / $25B</td><td>OpenAI+MS+SoftBank+G42, 1단계 200MW 2026 Q3</td></tr>
+<tr><td><strong>MGX</strong></td><td>$50B+</td><td>소버린 AI 펀드, GAIIP $30B</td></tr>
+<tr><td><strong>G42</strong></td><td>$40B 밸류</td><td>MS $15.2B, Stargate 실행</td></tr>
+<tr><td><strong>AI 2031</strong></td><td>연 $8B+</td><td>GDP 9.3% → 35%</td></tr>
+</tbody></table>
+<div class="sg"><div class="sk a2"><div class="l">Khazna</div><div class="v">70%</div><div class="u">UAE DC 점유</div></div><div class="sk a2"><div class="l">파이프라인</div><div class="v">1.4GW+</div><div class="u">기존 414MW 3배+</div></div><div class="sk a2"><div class="l">GPU 수요</div><div class="v">100만+</div><div class="u">Stargate 전체</div></div><div class="sk a2"><div class="l">DC 2030</div><div class="v">$33.3억</div><div class="u">CAGR 17.6%</div></div></div>
+</div></div></div>
+
+<!-- AI-02 -->
+<div class="sec open"><div class="sh" onclick="tog(this)"><div class="st"><span class="n">02</span>🔥 UAE AI 반도체 페인포인트</div><svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="sb"><div class="sc">
+<div class="pg">
+<div class="pkd"><h4>⚡ 전력·냉각 위기</h4><ul class="bl"><li>"DC Energy Review Team" 신설</li><li>여름 <strong>45°C+</strong> → 냉각 <strong>40–50%</strong></li><li>OPEX <strong>2–3배 상승</strong></li><li>5GW = 전체 전력 증설 필요</li></ul></div>
+<div class="pkd"><h4>🔗 공급망 리스크</h4><ul class="bl"><li>H100/H200 <strong>공급 부족</strong></li><li>NVIDIA GPU <strong>6–12mo 대기</strong></li><li>H100: <strong>$25K–40K</strong></li><li>트럼프 <strong>수출 정책 변동</strong></li></ul></div>
+</div>
+<div class="ib id"><strong>핵심:</strong> 전력 부족+극한 기온+NVIDIA 의존 = 3중 과제 모두 리벨리온 NPU가 직접 해결 (50% 전력↓, 2–4mo 납기, 한국산 공급 안정).</div>
+</div></div></div>
+
+<!-- AI-03 -->
+<div class="sec open"><div class="sh" onclick="tog(this)"><div class="st"><span class="n">03</span>💪 NVIDIA vs 리벨리온 · 차별화 포지션</div><svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="sb"><div class="sc">
+<table class="ct"><thead><tr><th>항목</th><th style="color:#4ade80">NVIDIA H100</th><th style="color:#818cf8">리벨리온 ATOM</th><th>UAE 적합</th></tr></thead><tbody>
+<tr><td><strong>전력</strong></td><td class="lo">700W</td><td class="w">~350W</td><td>🟢 냉각↓</td></tr>
+<tr><td><strong>아키텍처</strong></td><td>GPU 범용</td><td class="w">NPU 특화</td><td>🟢 최적</td></tr>
+<tr><td><strong>납기</strong></td><td class="lo">6–12mo</td><td class="w">2–4mo</td><td>🟢 빠름</td></tr>
+<tr><td><strong>가격</strong></td><td class="lo">$25–40K</td><td class="w">~$15–20K</td><td>🟢 효율</td></tr>
+<tr><td><strong>리스크</strong></td><td class="lo">수출규제</td><td class="w">한-UAE 우호</td><td>🟢 안정</td></tr>
+</tbody></table>
+<div class="sg" style="grid-template-columns:repeat(3,1fr)">
+<div class="sk" style="border-top:3px solid #00d4aa"><div class="l" style="color:#00d4aa">🌱 Green AI</div><div class="u">50% 전력 절약, OPEX 30–40%↓<br>Net Zero 2050 부합</div></div>
+<div class="sk" style="border-top:3px solid var(--c2)"><div class="l" style="color:#818cf8">🏛️ 주권 AI</div><div class="u">빅테크 의존 탈피<br>Falcon/Jais LLM 최적화</div></div>
+<div class="sk" style="border-top:3px solid var(--c3)"><div class="l" style="color:var(--c3)">🤝 전략 파트너십</div><div class="u">CEPA 관세 철폐<br>바라카 원전 신뢰</div></div>
+</div>
+</div></div></div>
+
+<!-- AI-04 -->
+<div class="sec open"><div class="sh" onclick="tog(this)"><div class="st"><span class="n">04</span>🌍 글로벌 AI 칩 수출 비교 — UAE 포지션</div><svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="sb"><div class="sc">
+<h3 class="ss">글로벌 AI 반도체 수출 매력도</h3>
+<table class="ct"><thead><tr><th>#</th><th>시장</th><th>규모</th><th>강점</th><th>리스크</th></tr></thead><tbody>
+<tr><td>1</td><td>🇺🇸 미국</td><td><strong>$850B</strong></td><td>NVIDIA 소비 60%+, VC $200B+/년</td><td>경쟁 극심, 진입 어려움</td></tr>
+<tr><td>2</td><td>🇨🇳 중국</td><td>$400B</td><td>ByteDance·Tencent 수요</td><td class="lo">수출규제, Entity List</td></tr>
+<tr><td>3</td><td>🇸🇬 싱가포르</td><td>$180B</td><td>아시아 AI 허브, 세율 17%</td><td>시장 규모 한계</td></tr>
+<tr style="background:var(--c2d)"><td>—</td><td><strong>🇦🇪 UAE</strong></td><td>$950M→$4.3B</td><td class="w"><strong>Stargate 5GW, 세금 0%, SWF $2.5T</strong></td><td>규모 작음, 인재 부족</td></tr>
+</tbody></table>
+
+<h3 class="ss">UAE vs 미국</h3>
+<table class="dt-t"><thead><tr><th>구분</th><th>🇦🇪 UAE</th><th>🇺🇸 미국</th></tr></thead><tbody>
+<tr><td>시장</td><td>$950M → $4.3B</td><td>$850B → $2T+</td></tr>
+<tr><td>지원</td><td>MGX $50B, Stargate $500B</td><td>CHIPS Act $280B, VC $200B+</td></tr>
+<tr><td>세제</td><td style="color:var(--c1);font-weight:600">법인세 0%, 소득세 0%</td><td>법인세 21%, 소득세 37%</td></tr>
+<tr><td>인재</td><td class="lo">AI 엔지니어 부족</td><td>Stanford/MIT 공급망</td></tr>
+</tbody></table>
+<div class="ib i2"><strong>UAE 핵심:</strong> 시장 규모는 미국의 1/900이지만, Stargate 5GW(미국 외 최대) + OpenAI/MS 직접 파트너 + 세금 0% + SWF $2.5T. G42 외 대형 소비처 제한이 약점.</div>
+
+<h3 class="ss">UAE vs 싱가포르</h3>
+<table class="dt-t"><thead><tr><th>구분</th><th>🇦🇪 UAE</th><th>🇸🇬 싱가포르</th></tr></thead><tbody>
+<tr><td>자금</td><td style="font-weight:600">SWF $2.5T, MGX $50B AI 전용</td><td>GIC/Temasek $1.2T</td></tr>
+<tr><td>규제</td><td>AI 규제 미비, 빠른 승인</td><td>PDPA 체계적, 예측 안정</td></tr>
+<tr><td>배후</td><td>GCC+인도+아프리카 <strong>20억</strong></td><td>동남아+호주 10억</td></tr>
+</tbody></table>
+</div></div></div>
+
+<!-- AI-05 -->
+<div class="sec"><div class="sh" onclick="tog(this)"><div class="st"><span class="n">05</span>🎯 파일럿 파트너 전략 — 3단계 접근</div><svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="sb"><div class="sc">
+<div class="ib i2"><strong>최적 경로:</strong> G42/Core42 (기술 검증) → MGX (투자 연결) → Hub71 (생태계 진입)</div>
+<h3 class="ss">Tier 1 — 핵심 기술 파트너 (필수)</h3>
+<div class="pc"><div class="ph"><div class="pa g2">🔧</div><div><div class="pn2">G42 / Core42</div><div class="pr">최우선 파트너 · Falcon LLM 40B/180B 훈련 중</div></div></div><div class="pd"><strong>CEO:</strong> Peng Xiao (前 DarkMatter). UAE 유일 대규모 AI 컴퓨팅 클러스터.<br><strong>검증 가치:</strong> G42 검증 = UAE 정부 + Microsoft + OpenAI 간접 승인<br><strong>접근:</strong> "Falcon 성능 최적화 벤치마킹" 제안 → 비NVIDIA 다변화 = <strong>NPU 직접 대상</strong></div></div>
+<div class="pc"><div class="ph"><div class="pa g2">🏗️</div><div><div class="pn2">Khazna Data Centers</div><div class="pr">UAE DC 70%+ 점유 · Stargate 참여</div></div></div><div class="pd"><strong>확장:</strong> 터키, 프랑스, 이탈리아, 케냐 진출<br><strong>기회:</strong> 40°C+ 환경 냉각 효율 검증 인프라 파트너</div></div>
+
+<h3 class="ss">Tier 2 — 투자 연결</h3>
+<div class="pc"><div class="ph"><div class="pa g2">💼</div><div><div class="pn2">MGX</div><div class="pr">$50B+ AUM · AI 전용 · 최소 $500M</div></div></div><div class="pd"><strong>CEO:</strong> Ahmed Al Idrissi (McKinsey → Mubadala → MGX). <strong>AMD 이사회</strong> = 반도체 직접 이해.<br><strong>포트폴리오:</strong> OpenAI $6.6B, xAI $26B, Anthropic $3.5B — AI 칩 가치 이해도 최고</div></div>
+<div class="pc"><div class="ph"><div class="pa g2">🏦</div><div><div class="pn2">Mubadala Capital</div><div class="pr">$330B AUM · CEO: MBZ 최측근</div></div></div><div class="pd"><strong>반도체:</strong> GlobalFoundries 소유, AMD 이사회. 기술 섹터 $80B+</div></div>
+
+<h3 class="ss">Tier 3 — 정부·생태계</h3>
+<div class="pc"><div class="ph"><div class="pa g2">🚀</div><div><div class="pn2">Hub71</div><div class="pr">Mubadala+ADQ+SoftBank · AI 50+ 입주</div></div></div><div class="pd"><strong>혜택:</strong> 2년 무료 오피스 + 정부 네트워킹 + 비자<br><strong>성공 사례:</strong> Presight AI ($4.2B 시총), Inception ($2B)</div></div>
+<div class="pc"><div class="ph"><div class="pa g2">🏛️</div><div><div class="pn2">ADIO</div><div class="pr">Abu Dhabi Investment Office</div></div></div><div class="pd"><strong>인센티브:</strong> R&D 보조금 최대 50%, AI 우선 섹터, 인재 비용 지원</div></div>
+</div></div></div>
+
+<!-- AI-06 -->
+<div class="sec"><div class="sh" onclick="tog(this)"><div class="st"><span class="n">06</span>🎯 핵심 의사결정권자 · 접근법</div><svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="sb"><div class="sc">
+<div class="pc"><div class="ph"><div class="pa g2">👑</div><div><div class="pn2">Sheikh Tahnoun bin Zayed</div><div class="pr">국가안보보좌관 · ADIA $1.18T + G42 + MGX + IHC $240B</div></div></div><div class="pd"><strong>AI 투자:</strong> OpenAI $6.6B, xAI $26B, Anthropic $3.5B<br><strong>접근:</strong> 국가 안보 + AI 주권 프레이밍</div></div>
+<table class="dt-t"><thead><tr><th>파트너</th><th>핵심 인물</th><th>접근법</th><th>일정</th></tr></thead><tbody>
+<tr><td><strong>Hub71</strong></td><td>Ahmad Ali Alwan (CEO)</td><td>공식 신청 + 한국 정부 추천</td><td>2–4주</td></tr>
+<tr><td><strong>G42</strong></td><td>Peng Xiao (CEO)</td><td>Hub71 경유 + 기술 백서</td><td>1–2개월</td></tr>
+<tr><td><strong>MGX</strong></td><td>Ahmed Al Idrissi (CEO)</td><td>G42 성과 기반 + Mubadala 추천</td><td>3–6개월</td></tr>
+<tr><td><strong>ADIO</strong></td><td>Tariq Bin Hendi (DG)</td><td>Hub71 + 대사관 경유</td><td>1–3개월</td></tr>
+</tbody></table>
+<div class="ib i2"><strong>접근 경로:</strong> Tahnoun 제국($1.5T) → IHC → G42 → MGX. "주권 AI + Green AI" 프레이밍. <strong>"기술 우수성"보다 "UAE 정부 정책 정렬" + "현지 파트너 신뢰"가 핵심.</strong></div>
+</div></div></div>
+
+<!-- AI-07 -->
+<div class="sec"><div class="sh" onclick="tog(this)"><div class="st"><span class="n">07</span>리벨리온 현황 · 사우디 발판</div><svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="sb"><div class="sc">
+<div class="sg"><div class="sk a2"><div class="l">기업가치</div><div class="v">$14억</div><div class="u">Series C, Arm</div></div><div class="sk a2"><div class="l">누적</div><div class="v">$4.6억+</div></div><div class="sk a2"><div class="l">REBEL-Quad</div><div class="v">2 PFLOPS</div><div class="u">144GB HBM3E</div></div><div class="sk a2"><div class="l">효율</div><div class="v">2.7x</div><div class="u">H100 대비</div></div></div>
+<ul class="bl"><li><strong>사우디:</strong> Wa'ed $15M → 아람코 MOU → 서버 납품 → <strong>리야드 100% 자회사</strong> (최초)</li><li><strong>의료AI:</strong> FastSurfer 뇌영상 ATOM 실증 / SKT X Caliber 1,000 병원 <strong>완전 전환</strong></li><li><strong>소버린 AI:</strong> Jais 2 700억 파라미터 <strong>Cerebras 학습</strong> — 비NVIDIA 증명. 아랍어 4억+ 사용자 직접 부합.</li></ul>
+</div></div></div>
+
+<!-- AI-08 -->
+<div class="sec"><div class="sh" onclick="tog(this)"><div class="st"><span class="n">08</span>📋 실행 로드맵 · 리스크</div><svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="sb"><div class="sc">
+<div class="tl">
+<div class="ti"><div class="tp">Phase 1 — 기술 검증 (3–6mo)</div><div class="td">Hub71 입주 + Abu Dhabi 프리존 법인 (100% 소유)<br>G42/Core42: Falcon 180B 추론 벤치마킹 (H100 대비)<br>Khazna DC: 40°C+ 냉각 효율 검증</div></div>
+<div class="ti"><div class="tp">Phase 2 — 투자·확장 (6–12mo)</div><div class="td">MGX Series 라운드: $50–100M 목표<br>ADIO R&D 보조금 (최대 50%)<br>Microsoft Azure UAE 공급 협상<br>사우디 NEOM, 카타르 QF 확장</div></div>
+<div class="ti"><div class="tp">Phase 3 — 상용화 (12–24mo)</div><div class="td">Stargate UAE 공식 공급업체 등록<br>아랍어 LLM 최적화 칩 + 고온 특화 설계<br>GCC + 인도 + 아프리카 허브 확장</div></div>
+</div>
+<h3 class="ss">리스크</h3>
+<div class="pg">
+<div class="pkd"><h4>단기</h4><ul class="bl"><li>미국 수출규제 EAR/ITAR</li><li>G42-중국 관계 → 미국 감시</li><li>전력망 한계 vs AI DC 수요</li><li>칩 엔지니어 현지 절대 부족</li></ul></div>
+<div class="pkd"><h4>장기</h4><ul class="bl"><li>중동 전체 규모 < 아시아/미국</li><li>중동 분쟁 격화 → 투자 위축</li><li>NVIDIA 생태계 강화 → 대안 수요↓</li><li>AMD/Intel 중동 선점 경쟁</li></ul></div>
+</div>
+<div class="ib i2"><strong>대응:</strong> 미국 변호사 + UAE 컴플라이언스 팀. 차별화 = 전력효율 + 아랍어 AI 특화 + 한-UAE 전략 신뢰.</div>
+</div></div></div>
+
+<!-- AI-09 -->
+<div class="sec"><div class="sh" onclick="tog(this)"><div class="st"><span class="n">09</span>프리존 · 사우디 vs UAE · 한-UAE</div><svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="sb"><div class="sc">
+<table class="dt-t"><thead><tr><th>프리존</th><th>특징</th><th>적합</th></tr></thead><tbody>
+<tr><td><strong>ADGM</strong></td><td>영국법, 0% 50년, ~$5.7K</td><td><span class="tg b">높음</span></td></tr>
+<tr><td><strong>마스다르</strong></td><td>AI 전용, G42/TII</td><td><span class="tg b">높음</span></td></tr>
+<tr><td><strong>Hub71</strong></td><td>AED 75만 인센티브, 2년 무료</td><td><span class="tg b">최고</span></td></tr>
+</tbody></table>
+<table class="dt-t"><thead><tr><th>차원</th><th>UAE</th><th>사우디</th></tr></thead><tbody>
+<tr><td>파이프라인</td><td>1.4 GW</td><td>2.2 GW</td></tr>
+<tr><td>플래그십</td><td>Stargate 5GW</td><td>HUMAIN 6GW</td></tr>
+<tr><td>강점</td><td><strong>속도, 규제 명확</strong></td><td><strong>규모, 자본</strong></td></tr>
+</tbody></table>
+<ul class="bl"><li><strong>CEPA</strong> (2024.05): 최초 중동 FTA, 90% 관세 철폐</li><li>양자 무역 <strong>$210억</strong>, "특별 전략적 동반자"</li><li>바라카 원전 + 7개 MOU + GITEX 70+ 한국 AI 기업</li></ul>
+<p class="d">사우디 법인 보유 — UAE 추가 시 <strong>걸프 전체 플레이어</strong> 전환.</p>
+</div></div></div>
+</div>
+
+
+
+</div>
+<script>
+document.querySelectorAll('.tab').forEach(t=>{t.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.pn').forEach(x=>x.classList.remove('active'));t.classList.add('active');document.querySelector('[data-panel="'+t.dataset.tab+'"]').classList.add('active');window.scrollTo({top:0,behavior:'smooth'})})});
+function tog(h){h.closest('.sec').classList.toggle('open')}
+</script>
+</body>
+</html>
